@@ -15,16 +15,18 @@
             <div class="header">
               <h1>Mortgage Calculator</h1>
 
-              <button type="button" id="clear-btn">Clear All</button>
+              <button type="button" class="clear-btn">Clear All</button>
             </div>
 
             <div>
               <label>
                 Mortgage Amount
 
-                <div class="input-text">$</div>
+                <div class="amount-text">$</div>
 
                 <input type="number" id="mortgage-amount" />
+
+                <small class="error-text hidden">This field is required</small>
               </label>
             </div>
 
@@ -35,6 +37,8 @@
                 <input type="number" id="mortgage-term" />
 
                 <div class="input-text">years</div>
+
+                <small class="error-text hidden">This field is required</small>
               </label>
 
               <label>
@@ -43,27 +47,55 @@
                 <input type="number" id="interest-rate" />
 
                 <div class="input-text">%</div>
+
+                <small class="error-text hidden">This field is required</small>
               </label>
             </div>
 
-            <label>
-              Mortgage Type
+            <div class="radio-container">
+              <label>
+                Mortgage Type
 
-              <div class="radio">
-                <input type="radio" name="mortgage-type" value="repayment" />
-                <p>Repayment</p>
-              </div>
+                <div class="radios">
+                  <label>
+                    <div class="radio">
+                      <input
+                        type="radio"
+                        class="mortgage-type"
+                        name="mortgage-type"
+                        value="repayment"
+                        required
+                        autocomplete="off"
+                      />
+                      Repayments
+                    </div>
+                  </label>
 
-              <div class="radio">
-                <input type="radio" name="mortgage-type" value="interest" />
-                <p>Interest Only</p>
-              </div>
-            </label>
+                  <label>
+                    <div class="radio">
+                      <input
+                        type="radio"
+                        class="mortgage-type"
+                        name="mortgage-type"
+                        value="interest"
+                        required
+                        autocomplete="off"
+                      />
+                      Interest Only
+                    </div>
+                  </label>
+                </div>
 
-            <button type="submit" id="submit-btn" class="submit">
-              <img src="images/icon-calculator.svg" aria-hidden="true" />
-              Calculate Repayments
-            </button>
+                <small class="error-text hidden">This field is required</small>
+              </label>
+            </div>
+
+            <div class="button-container">
+              <button class="submit-btn" type="submit">
+                <img src="images/icon-calculator.svg" aria-hidden="true" />
+                Calculate Repayments
+              </button>
+            </div>
           </div>
         </form>
         <div class="results-container-empty">
@@ -73,7 +105,7 @@
           <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
         </div>
 
-        <div class="results-container-complete">
+        <div class="results-container-complete hidden">
           <h2>Your results</h2>
           <p>
             Your results are shown below based on the information you provided. To adjust the results, edit the form and
@@ -82,10 +114,10 @@
 
           <div class="results">
             <p>Your monthly repayments</p>
-            <h3>$1,787.74</h3>
+            <h3 id="repayments">$1,787.74</h3>
             <div class="line"></div>
             <p>Total you'll repay over the term</p>
-            <h4>$539,322.94</h4>
+            <h4 id="total">$539,322.94</h4>
           </div>
         </div>
       </div>
