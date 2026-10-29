@@ -33,9 +33,12 @@ body {
   background-color: var(--clr-blue-100);
 }
 
+.page-container {
+  height: 100vh;
+}
+
 .card-container {
   background-color: var(--clr-white);
-
   max-width: 30rem;
   margin: 0 auto;
 }
@@ -102,6 +105,7 @@ input[type='number'] {
   cursor: pointer;
   outline: none;
   font-weight: var(--fw-700);
+  z-index: 2;
 }
 
 input[type='number']:hover {
@@ -119,6 +123,7 @@ input[type='number']:hover {
   align-items: center;
   top: 2rem;
   font-weight: var(--fw-700);
+  z-index: 1;
 }
 
 .amount-text {
@@ -302,3 +307,62 @@ input[type='number']:hover {
 }
 
 /* DESKTOP */
+
+@media (min-width: 60em) {
+  .page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-container {
+    max-width: 55rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-container {
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    padding: 2rem;
+  }
+
+  .mortgage-row {
+    display: flex;
+    gap: 1.3rem;
+  }
+
+  .submit-btn {
+    width: 20rem;
+  }
+
+  .results-container-empty,
+  .results-container-complete {
+    border-radius: 0 1rem 1rem 5rem;
+  }
+
+  .results-container-complete {
+    justify-content: flex-start;
+    padding: 2rem;
+  }
+
+  .results-container-complete p {
+    margin-bottom: 2rem;
+  }
+
+  .results p {
+    margin-bottom: 1rem;
+  }
+
+  .results h3 {
+    font-size: 3rem;
+  }
+}
