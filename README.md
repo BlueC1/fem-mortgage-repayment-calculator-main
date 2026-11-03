@@ -41,5 +41,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/BlueC1/fem-mortgage-repayment-calculator-main)
-- Live Site URL: [Add live site URL here](https://bluec1.github.io/fem-mortgage-repayment-calculator-main/)
+- Solution URL: [Solution](https://github.com/BlueC1/fem-mortgage-repayment-calculator-main)
+- Live Site URL: [Live Site](https://bluec1.github.io/fem-mortgage-repayment-calculator-main/)
