@@ -25,10 +25,18 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
 ![Mobile Empty](/screenshots/Screenshot%202026-11-03%20at%2015-14-01%20Frontend%20Mentor%20Mortgage%20repayment%20calculator.png?raw=true)
+
+<br>
+
 ![Mobile Completed](/screenshots/Screenshot%202026-11-03%20at%2015-13-43%20Frontend%20Mentor%20Mortgage%20repayment%20calculator.png?raw=true)
-![Desktop Empty](/screenshots/Screenshot%202026-11-03%20at%2015-12-40%20Frontend%20Mentor%20Mortgage%20repayment%20calculator.pngraw=true)
+
+<br>
+
+![Desktop Empty](/screenshots/Screenshot%202026-11-03%20at%2015-12-40%20Frontend%20Mentor%20Mortgage%20repayment%20calculator.png?raw=true)
+
+<br>
+
 ![Desktop Completed](/screenshots/Screenshot%202026-11-03%20at%2015-13-16%20Frontend%20Mentor%20Mortgage%20repayment%20calculator.png?raw=true)
 
 ### Links
