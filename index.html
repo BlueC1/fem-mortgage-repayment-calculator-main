@@ -22,11 +22,11 @@
               <label>
                 Mortgage Amount
 
+                <input type="number" id="mortgage-amount" autocomplete="off" />
+
                 <div class="amount-text">$</div>
 
-                <input type="number" id="mortgage-amount" />
-
-                <small class="error-text hidden">This field is required</small>
+                <small class="m-amount-text error-text hidden">This field is required</small>
               </label>
             </div>
 
@@ -34,21 +34,21 @@
               <label
                 >Mortgage Term
 
-                <input type="number" id="mortgage-term" />
+                <input type="number" id="mortgage-term" autocomplete="off" />
 
-                <div class="input-text">years</div>
+                <div class="input-text term-sign">years</div>
 
-                <small class="error-text hidden">This field is required</small>
+                <small class="term-text error-text hidden">This field is required</small>
               </label>
 
               <label>
                 Interest Rate
 
-                <input type="number" id="interest-rate" />
+                <input type="number" id="interest-rate" autocomplete="off" />
 
-                <div class="input-text">%</div>
+                <div class="input-text rate-sign">%</div>
 
-                <small class="error-text hidden">This field is required</small>
+                <small class="rate-text error-text hidden">This field is required</small>
               </label>
             </div>
 
@@ -61,10 +61,9 @@
                     <div class="radio">
                       <input
                         type="radio"
-                        class="mortgage-type"
+                        class="mortgage-type repayment"
                         name="mortgage-type"
                         value="repayment"
-                        required
                         autocomplete="off"
                       />
                       Repayments
@@ -75,10 +74,9 @@
                     <div class="radio">
                       <input
                         type="radio"
-                        class="mortgage-type"
+                        class="mortgage-type interest"
                         name="mortgage-type"
                         value="interest"
-                        required
                         autocomplete="off"
                       />
                       Interest Only
@@ -86,7 +84,7 @@
                   </label>
                 </div>
 
-                <small class="error-text hidden">This field is required</small>
+                <small class="type-text error-text hidden">This field is required</small>
               </label>
             </div>
 
@@ -114,10 +112,10 @@
 
           <div class="results">
             <p>Your monthly repayments</p>
-            <h3 id="repayments">$1,787.74</h3>
+            <h3 id="repayments"></h3>
             <div class="line"></div>
             <p>Total you'll repay over the term</p>
-            <h4 id="total">$539,322.94</h4>
+            <h4 id="total"></h4>
           </div>
         </div>
       </div>
